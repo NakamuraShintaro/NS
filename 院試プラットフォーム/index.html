@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utaf-8">
+        <title>院試プラットフォーム</title>
+        <script type="text/javascript" src="send_info.js"></script>
+    </head>
+<body>
+    <header>
+        
+        
+    </header>
+    <main>
+
+        <h1 class="alert alert-primary">当サイトについて</h1>
+        当サイトは情報系の院試の過去問の解答を提供するサイトです。皆さんが作成した解答をアップロードいたします。その際、何か宣伝したいものがあればそれを自由記述欄に書いてください。一緒にアップロードします！
+        <br>
+        要望などは右のメールアドレスまで⇒<a href="mailto:shintaronakamura777@gmail.com">shintaronakamura777@gmail.com</a>
+        <div id="main_visual">
+            <img src = "images/main_visual.jpg">
+        </div>
+        <h1 class="alert alert-info" >院試過去問解答</h1>
+        <li><a href="">情報理工学専攻（共通数学）</a></li>
+        <li><a href="">情報理工学専攻（専門科目）</a></li>
+        <li><a href="複雑理工学専攻">複雑理工学専攻</a></li>
+        <h1 class="alert alert-success">自分の解答をアップロードする</h1>
+                <p>
+                <span class="badge badge-info">問題</span> 
+                <div id="file" class="input-group">
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="customFile" name="custom[file][]" multiple>
+                            <label class="custom-file-label" for="customFile" data-browse="参照">ファイル選択...</label>
+                        </div>
+                        <div class="input-group-append">
+                            <button type="button" class="btn btn-outline-secondary reset"><i class="fas fa-times fa-fw"></i>取消</button>
+                        </div>
+                    </div>
+                </p>
+                
+                <p>
+                    <span class="badge badge-info">解答:</span>    
+                    <div id="file" class="input-group">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="customFile" name="custom[file][]" multiple>
+                                <label class="custom-file-label" for="customFile" data-browse="参照">ファイル選択...</label>
+                            </div>
+                            <div class="input-group-append">
+                                <button type="button" class="btn btn-outline-secondary reset"><i class="fas fa-times fa-fw"></i>取消</button>
+                            </div>
+                        </div>   
+                </p>
+                <p>
+                <span class="badge badge-info">専攻</span> 
+                <select id ="major" class = "form-control">
+                    <option value="jouhourikou_math">情報理工学（共通数学）</option>
+                    <option value="jouhourikou_speciality">情報理工(専門)</option>
+                    <option value="hukuzaturikou">複雑理工</option>
+                </select>
+                </p>
+                <p>
+                    <span class="badge badge-info">解答</span> 
+                    <select id ="year" class = "form-control">
+                        <option value="2004">2004</option>
+                        <option value="2005">2005</option>
+                        <option value="2006">2006</option>
+                        <option value="2007">2007</option>
+                        <option value="2008">2008</option>
+                        <option value="2009">2009</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                    </select>
+                </p>
+                <p>
+                   <span class="badge badge-info">自由宣伝欄</span> 
+                </p>
+                <p>
+                 <form>
+                 <textarea rows = "25" cols = "100" placeholder="自由に宣伝したいことを書いてください。youtubeなどの埋め込みなどはこちらで調整します。"></textarea><br>
+                 <input type = "reset" value = "クリア" class = "btn btn-danger" onclick="return confirm('リセットボタンがクリックされました。本当に入力内容を削除してもよろしいですか？');">
+                 </form>
+                </p>
+                <p>
+                    <button id="btn" class="btn btn-primary" >送信</button>
+                    <!-- <input type = "reset" class = "btn btn-danger"> -->
+                </p>
+    </main>
+        <!-- BootstrapのCSS読み込み -->
+        <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.css">
+        <!-- jQuery読み込み -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- BootstrapのJS読み込み -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- <script src="js/bootstrap.min.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script type="text/javascript" src="index.js"></script>
+</body>
+        
+</html>
